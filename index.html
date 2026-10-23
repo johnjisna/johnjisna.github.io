@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f0e">
+<meta name="description" content="Jisna C John — DevOps Engineer building reliable cloud infrastructure, Kubernetes platforms, GitOps delivery, and observability.">
+<title>Jisna C John | DevOps Engineer</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Jisna home"><span class="brand-mark">JC</span><span>JISNA<span class="muted">.OPS</span></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#systems">Systems</a><a href="#impact">Impact</a><a href="#projects">Projects</a><a href="#journey">Experience</a><a href="#writing">Writing</a><a href="#education">Education</a><a href="#contact" class="nav-cta">Let's connect <span>↗</span></a>
+  </nav>
+</header>
+<main>
+<section class="hero section-wrap" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> DEVOPS ENGINEER · CLOUD & PLATFORM</div>
+    <h1>Building systems<br>that <span class="gradient-text">keep running.</span></h1>
+    <p class="hero-sub">I’m Jisna C John — a DevOps Engineer focused on Kubernetes, cloud infrastructure, delivery automation, and production reliability.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+      <a class="button button-quiet" href="https://github.com/johnjisna" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a>
+      <a class="button button-quiet" href="resume.pdf" target="_blank" rel="noreferrer">Download CV <span>↓</span></a>
+    </div>
+    <div class="hero-facts"><div><strong>4.5+</strong><span>Years in engineering</span></div><div><strong>CKA</strong><span>Certified Kubernetes Administrator</span></div><div><strong>30+</strong><span>Services supported on platform</span></div></div>
+  </div>
+  <div class="terminal-card" aria-label="Interactive portfolio terminal">
+    <div class="terminal-head"><div class="window-dots"><i></i><i></i><i></i></div><span>jisna@ops-lab: ~</span><span class="terminal-live"><b></b> interactive</span></div>
+    <div class="terminal-body">
+      <p class="term-comment"># A little about how I work</p>
+      <p><span class="term-green">➜</span> <span class="term-blue">whoami</span></p>
+      <p class="term-output">devops engineer · problem solver</p>
+      <p><span class="term-green">➜</span> <span class="term-blue">cat principles.txt</span></p>
+      <p class="term-output">automate the repeatable<br>observe what matters<br>make recovery boring</p>
+      <p><span class="term-green">➜</span> <span class="term-blue">help</span></p>
+      <p class="term-output">Try: <button class="term-command" data-command="skills">skills</button> <button class="term-command" data-command="projects">projects</button> <button class="term-command" data-command="impact">impact</button> <button class="term-command" data-command="contact">contact</button></p>
+      <div id="terminalResult" class="terminal-result" aria-live="polite">Choose a command to inspect the portfolio.</div>
+      <form id="terminalForm" class="term-input-row"><label for="terminalInput"><span class="term-green">➜</span></label><input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="type a command…" aria-label="Terminal command"><button aria-label="Run command">↵</button></form>
+    </div>
+  </div>
+  <div class="hero-gridline"></div>
+  <div class="signal-orbit" aria-hidden="true">
+    <div class="orbit orbit-cloud"></div><div class="orbit orbit-secure"></div><div class="orbit orbit-observe"></div>
+    <span class="orbit-icon cloud-icon">☁<small>CLOUD</small></span><span class="orbit-icon shield-icon">⬡<small>SECURITY</small></span><span class="orbit-icon pulse-icon">◉<small>OBSERVE</small></span>
+    <i class="signal-dot dot-one"></i><i class="signal-dot dot-two"></i><i class="signal-dot dot-three"></i>
+  </div>
+</section>
+
+<section class="section-wrap section-block" id="systems">
+  <div class="section-heading"><div><div class="eyebrow">01 / PLATFORM TOOLKIT</div><h2>Systems I work with<span class="accent">.</span></h2></div><p>Practical tools for provisioning, shipping, securing, and observing workloads.</p></div>
+  <div class="systems-grid">
+    <article class="system-card"><div class="system-icon">☁</div><h3>Cloud platforms</h3><p>AWS · Azure · GCP · DigitalOcean</p><div class="tag-row"><span>EKS</span><span>DOKS</span><span>IAM</span><span>Networking</span></div></article>
+    <article class="system-card"><div class="system-icon">⌘</div><h3>Containers & orchestration</h3><p>Kubernetes-first deployment and operations.</p><div class="tag-row"><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Ingress</span></div></article>
+    <article class="system-card"><div class="system-icon">⎇</div><h3>Infrastructure & delivery</h3><p>Repeatable infrastructure and Git-driven releases.</p><div class="tag-row"><span>Terraform</span><span>Ansible</span><span>Go</span><span>Bash</span><span>Python</span><span>Argo CD</span><span>GitHub Actions</span><span>Azure DevOps</span></div></article>
+    <article class="system-card"><div class="system-icon">◉</div><h3>Observability & security</h3><p>Signals, alerting, secrets, and incident response.</p><div class="tag-row"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Vault</span><span>ESO</span></div></article>
+  </div>
+  <div class="architecture-card">
+    <div class="architecture-top"><div><span class="eyebrow">REFERENCE ARCHITECTURE</span><h3>A simplified platform delivery path</h3></div><span class="status-chip"><i></i> illustrative</span></div>
+    <div class="architecture-flow">
+      <div class="arch-node"><span class="arch-symbol">⌘</span><strong>Git push</strong><small>Source change</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node"><span class="arch-symbol">⚙</span><strong>CI pipeline</strong><small>Build & validate</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node"><span class="arch-symbol">⇄</span><strong>Argo CD</strong><small>GitOps sync</small></div><span class="arch-arrow">→</span>
+      <div class="arch-node arch-node-highlight"><span class="arch-symbol">⬡</span><strong>Kubernetes</strong><small>Run workloads</small></div>
+    </div>
+    <div class="architecture-foot"><span>↳</span> Metrics, logs, traces, and alerts feed back into operations.</div>
+    <div class="ops-strip" aria-label="Cloud operations concepts"><div class="ops-chip"><span class="ops-glyph cloud-glyph">☁</span><span><b>Cloud</b><small>Provision · scale</small></span><i class="ops-pulse"></i></div><div class="ops-chip"><span class="ops-glyph shield-glyph">⬡</span><span><b>Security</b><small>Secrets · access</small></span><i class="ops-pulse"></i></div><div class="ops-chip"><span class="ops-glyph observe-glyph">◉</span><span><b>Observability</b><small>Metrics · logs · traces</small></span><i class="ops-pulse"></i></div></div>
+  </div>
+</section>
+
+<section class="section-wrap section-block" id="impact">
+  <div class="section-heading"><div><div class="eyebrow">02 / OUTCOMES</div><h2>Impact over activity<span class="accent">.</span></h2></div><p>Selected outcomes reported in my professional experience. Figures describe project results, not live telemetry.</p></div>
+  <div class="metrics-grid">
+    <article class="metric-card"><span class="metric-label">CONCURRENT TEST CAPACITY</span><strong>+40<span>%</span></strong><p>Improved capacity for isolated browser-testing workloads using Kubernetes resource tuning and autoscaling.</p><div class="metric-bar"><i style="width:82%"></i></div></article>
+    <article class="metric-card"><span class="metric-label">ENVIRONMENT COST</span><strong>−25<span>%</span></strong><p>Reduced environment cost while building an AWS EKS staging environment with Terraform.</p><div class="metric-bar"><i style="width:65%"></i></div></article>
+    <article class="metric-card"><span class="metric-label">MEAN TIME TO DETECT</span><strong>−40<span>%</span></strong><p>Improved issue detection through centralized observability, correlation, and automated alerting.</p><div class="metric-bar"><i style="width:78%"></i></div></article>
+    <article class="metric-card"><span class="metric-label">MANUALLY MANAGED SECRETS</span><strong>−80<span>%</span></strong><p>Centralized service credentials with Vault and External Secrets Operator.</p><div class="metric-bar"><i style="width:90%"></i></div></article>
+  </div>
+</section>
+
+<section class="section-wrap section-block" id="projects">
+  <div class="section-heading"><div><div class="eyebrow">03 / SELECTED WORK</div><h2>Platforms & projects<span class="accent">.</span></h2></div><p>What I built, operated, and learned. Professional work is summarized at a high level.</p></div>
+  <div class="projects-grid">
+    <article class="project-card project-featured"><div class="project-topline"><span class="project-index">CASE 001</span><span class="project-status"><i></i> PROFESSIONAL PLATFORM</span></div><div class="project-art browser-art"><div class="browser-window"><div class="browser-dots">● ● ●</div><div class="browser-lines"><i></i><i></i><i></i></div><div class="browser-panels"><b></b><b></b><b></b></div></div><div class="floating-label">isolated workloads <span>↗</span></div></div><h3>Lucius AI</h3><p class="project-summary">Enterprise browser-automation SaaS. Operated cloud infrastructure across AWS EKS and DigitalOcean Kubernetes for 30+ services.</p><div class="tag-row"><span>AWS EKS</span><span>DOKS</span><span>Terraform</span><span>Argo CD</span><span>Vault</span></div><details><summary>Read the engineering summary <span>＋</span></summary><div class="details-content"><p><b>Challenge:</b> Isolated browser workloads can create unpredictable resource demand and infrastructure cost.</p><p><b>Approach:</b> Worked with development teams on Kubernetes resource requests/limits, autoscaling, environment parity, GitOps delivery, and centralized observability.</p><p><b>Outcome:</b> CV-reported 40% higher concurrent test capacity, 25% lower environment cost, and 40% lower mean time to detect issues.</p></div></details></article>
+    <article class="project-card"><div class="project-topline"><span class="project-index">CASE 002</span><span class="project-type">PERFORMANCE</span></div><div class="project-art perf-art"><div class="load-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="perf-caption">LOAD → MEASURE → LEARN</div></div><h3>PerfAgents</h3><p class="project-summary">Kubernetes infrastructure for distributed performance-testing orchestration and containerized JMeter workloads.</p><div class="tag-row"><span>AWS EKS</span><span>Kubernetes</span><span>JMeter</span></div><details><summary>Read the engineering summary <span>＋</span></summary><div class="details-content"><p>Supported infrastructure for coordinated load-test execution from a unified control plane. The work centered on reliable containerized workloads and operational support.</p></div></details></article>
+    <article class="project-card"><div class="project-topline"><span class="project-index">CASE 003</span><span class="project-type">AI / PLATFORM</span></div><div class="project-art ai-art"><div class="ai-orbit orbit-one"></div><div class="ai-orbit orbit-two"></div><div class="ai-core">AI</div><span class="ai-node node-a">API</span><span class="ai-node node-b">LLM</span><span class="ai-node node-c">APP</span></div><h3>Vexabot AI</h3><p class="project-summary">Deployment and automation for an AI chatbot using Ollama-served LLMs and a web application stack.</p><div class="tag-row"><span>Ollama</span><span>FastAPI</span><span>Docker</span><span>Nginx</span><span>Terraform</span></div><details><summary>Read the engineering summary <span>＋</span></summary><div class="details-content"><p>Deployed the application stack with containerization, reverse proxy configuration, cloud infrastructure, and CI/CD automation.</p></div></details></article>
+    <article class="project-card personal-project"><div class="project-topline"><span class="project-index">LAB 001</span><span class="project-type">PERSONAL ENGINEERING</span></div><div class="project-art platform-art"><div class="platform-cube">⬡</div><div class="platform-ring ring-a"></div><div class="platform-ring ring-b"></div><span class="platform-label">PLATFORM PILOT</span></div><h3>PlatformPilot</h3><p class="project-summary">A Go-based platform engineering lab exploring Kubernetes integration and application operations through an API.</p><div class="tag-row"><span>Go</span><span>client-go</span><span>Kubernetes</span><span>Docker</span></div><a class="text-link" href="https://github.com/johnjisna" target="_blank" rel="noreferrer">Find repositories on GitHub <span>↗</span></a><p class="small-note">Link to the specific PlatformPilot repository once it is public.</p></article>
+  </div>
+</section>
+
+
+<section class="section-wrap section-block" id="writing">
+  <div class="section-heading"><div><div class="eyebrow">05 / PUBLIC WRITING</div><h2>Ideas, explained simply<span class="accent">.</span></h2></div><p>Technical articles on Kubernetes internals, networking, storage, and production operations.</p></div>
+  <div class="articles-grid">
+    <article class="article-card"><div class="article-meta"><span>STORAGE</span><span>SEP 2026</span></div><div class="article-icon">▤</div><h3>The CSI Driver Architecture</h3><p>How Kubernetes storage requests move through CSI controllers, sidecars, node plugins, and mounted volumes.</p><a href="https://www.linkedin.com/pulse/csi-driver-architecture-jisna-john-pbgwf" target="_blank" rel="noreferrer" class="text-link">Read article <span>↗</span></a></article>
+    <article class="article-card"><div class="article-meta"><span>NETWORKING</span><span>SEP 2026</span></div><div class="article-icon">⌘</div><h3>CNI Plugins</h3><p>A practical comparison of Flannel, Calico, Cilium, AWS VPC CNI, and how to choose for your needs.</p><a href="https://www.linkedin.com/pulse/cni-plugins-jisna-john-75xof" target="_blank" rel="noreferrer" class="text-link">Read article <span>↗</span></a></article>
+    <article class="article-card"><div class="article-meta"><span>SERVICE DISCOVERY</span><span>AUG 2026</span></div><div class="article-icon">⇄</div><h3>How Traffic Reaches a Pod: Services and kube-proxy</h3><p>Follow the request path from a stable Service address to a selected Pod, including kube-proxy and DNAT.</p><a href="https://www.linkedin.com/pulse/how-traffic-reaches-pod-services-kube-proxy-jisna-john-ocryc" target="_blank" rel="noreferrer" class="text-link">Read article <span>↗</span></a></article>
+    <article class="article-card"><div class="article-meta"><span>POD NETWORKING</span><span>AUG 2026</span></div><div class="article-icon">◉</div><h3>How Pods Talk to Each Other</h3><p>Understand network namespaces, veth pairs, Linux bridges, and how traffic travels between nodes.</p><a href="https://www.linkedin.com/pulse/how-pods-talk-each-other-jisna-john-5vrwc" target="_blank" rel="noreferrer" class="text-link">Read article <span>↗</span></a></article>
+  </div>
+  <div class="writing-footer"><a class="button button-quiet" href="https://www.linkedin.com/in/johnjisna/recent-activity/articles/" target="_blank" rel="noreferrer">View all articles on LinkedIn <span>↗</span></a></div>
+</section>
+
+<section class="section-wrap section-block" id="journey">
+  <div class="section-heading"><div><div class="eyebrow">04 / EXPERIENCE</div><h2>How I got here<span class="accent">.</span></h2></div><p>Cloud operations, infrastructure automation, and production support across different teams.</p></div>
+  <div class="timeline">
+    <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">OCT 2025 — PRESENT</div><div class="timeline-content"><div class="timeline-title"><h3>DevOps Engineer</h3><span>Testing Mavens</span></div><p>Own cloud infrastructure for Lucius AI, operating AWS EKS and DigitalOcean Kubernetes, GitOps delivery, secrets management, observability, and incident response.</p><div class="tag-row"><span>AWS</span><span>Kubernetes</span><span>Terraform</span><span>GitOps</span></div></div></article>
+    <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">MAY 2024 — SEP 2025</div><div class="timeline-content"><div class="timeline-title"><h3>DevOps Engineer</h3><span>Sayone Technologies</span></div><p>Delivered infrastructure across AWS, Azure, and GCP; automated releases with Azure DevOps; provisioned cloud resources with Terraform; deployed an MCP server.</p><div class="tag-row"><span>Azure DevOps</span><span>Terraform</span><span>AWS</span><span>AI integration</span></div></div></article>
+    <article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">APR 2022 — MAR 2024</div><div class="timeline-content"><div class="timeline-title"><h3>System Engineer</h3><span>Innovature Labs</span></div><p>Managed production AWS infrastructure, standardized server provisioning with Ansible, tuned Kubernetes resources, and supported CI/CD and on-call operations.</p><div class="tag-row"><span>AWS</span><span>Ansible</span><span>Helm</span><span>Grafana</span></div></div></article>
+  </div>
+</section>
+
+<section class="section-wrap section-block cert-section">
+  <div class="cert-card"><div class="cert-emblem">✓</div><div class="cert-copy"><div class="eyebrow">CERTIFICATION</div><h2>Certified Kubernetes Administrator (CKA)</h2><p>The Linux Foundation / CNCF · October 2026</p><div class="cert-links"><a class="text-link" href="https://www.credly.com/badges/b559d309-124e-484e-92fa-0e07e1bda2ac" target="_blank" rel="noreferrer">Verify my CKA badge on Credly ↗</a><a class="text-link" href="https://www.cncf.io/training/certification/cka/" target="_blank" rel="noreferrer">About the CKA certification ↗</a></div></div><div class="cert-stamp">CKA<br><span>CNCF / LF</span></div></div>
+  <p class="cert-note">Credential verification opens my personal badge page on Credly.</p>
+</section>
+
+
+<section class="section-wrap section-block" id="education">
+  <div class="section-heading"><div><div class="eyebrow">06 / EDUCATION</div><h2>Learning foundations<span class="accent">.</span></h2></div><p>Formal education alongside continuous hands-on learning in cloud, Kubernetes, and platform engineering.</p></div>
+  <div class="education-grid">
+    <article class="education-card"><div class="education-icon">⌂</div><div><span class="education-period">2023 — 2026 · EXPECTED</span><h3>Bachelor of Computer Applications (BCA)</h3><p>Indira Gandhi National Open University (IGNOU)</p><span class="education-status">Expected completion as stated in CV</span></div></article>
+    <article class="education-card"><div class="education-icon">⌘</div><div><span class="education-period">2017 — 2020</span><h3>Diploma in Computer Engineering</h3><p>Maharajas Technological Institute</p></div></article>
+  </div>
+</section>
+
+<section class="section-wrap contact-section" id="contact">
+  <div class="contact-panel"><div class="eyebrow"><span class="pulse"></span> OPEN TO THE NEXT CHALLENGE</div><h2>Let’s build something<br><span class="gradient-text">reliable.</span></h2><p>Interested in DevOps, platform engineering, cloud reliability, or infrastructure automation? Let’s connect.</p><div class="contact-actions"><a class="button button-primary" href="mailto:johnjisna66@gmail.com">Email me <span>↗</span></a><a class="button button-quiet" href="https://www.linkedin.com/in/johnjisna/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a class="button button-quiet" href="https://github.com/johnjisna" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a class="button button-quiet" href="tel:+917560975877">Call +91 75609 75877 <span>↗</span></a><a class="button button-quiet" href="https://wa.me/917560975877" target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a></div><div class="contact-meta"><span>KOCHI, INDIA</span><span>REMOTE-FRIENDLY</span><a href="tel:+917560975877">+91 75609 75877</a><span>BUILT WITH HTML · CSS · JS</span></div></div>
+</section>
+</main>
+<footer class="footer"><a class="brand" href="#home"><span class="brand-mark">JC</span><span>JISNA<span class="muted">.OPS</span></span></a><span>Designed for reliability. Shipped with curiosity.</span><a href="#home">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
